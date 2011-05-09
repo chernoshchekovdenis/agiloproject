@@ -1,0 +1,4 @@
+*.pyc
+*.orig
+settings_local.py
+agilo.db

@@ -1,0 +1,11 @@
+
+#left {
+    float: left;
+    width: 40%;
+}
+
+#right {
+    float: left;
+    width: 40%;
+    padding: 110px;
+}
