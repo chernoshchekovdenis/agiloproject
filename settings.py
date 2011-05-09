@@ -83,6 +83,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'db_requests.middleware.RequestToDbMiddleware',
 )
 
 ROOT_URLCONF = 'agiloproject.urls'
@@ -119,6 +120,7 @@ INSTALLED_APPS = (
     
     # Apps
     'person',
+    'db_requests',
 
 )
 

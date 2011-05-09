@@ -11,6 +11,5 @@ class HomePage(View):
 
     def get(self, request):
         person, created = Person.objects.get_or_create(name='Denis', last_name='Chernoshchekov')
-        print person
         data = {"person": person}
         return TemplateResponse(request, self.template_name, data)
