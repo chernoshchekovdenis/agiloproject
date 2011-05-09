@@ -8,4 +8,3 @@ class RequestListTest(TestCase):
     
     def setup(self):
         self.request = Request(request_body='')
-

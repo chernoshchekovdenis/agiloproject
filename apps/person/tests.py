@@ -17,5 +17,3 @@ class PersonTest(TestCase):
         self.find(self.person.jabber)
         self.find(self.person.skype)
         self.find(self.person.other)
-
-    

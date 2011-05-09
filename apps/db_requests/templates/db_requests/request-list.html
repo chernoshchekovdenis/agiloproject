@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+  {% for request in request_list %}
+    <div>
+      <h1>{{ forloop.counter }} Request</h1>
+      <p>{{ request.request_body }}</p>
+    </div>
+  {% empty %}
+    <p>Nothing to display</p>
+  {% endfor %}
+
+{% endblock content %}

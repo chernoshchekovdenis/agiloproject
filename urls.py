@@ -10,6 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', HomePage.as_view(), name="home-page"),
+    url(r'^requests/', include('db_requests.urls')),
 )
 
 #If this local dev-server, using static.serve

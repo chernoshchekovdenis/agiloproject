@@ -28,4 +28,9 @@
       <p>{{ person.other }}</p>
     {% endif %}
   </div>
+  <div id="separated">
+    {% if requests %}
+      <p><a href="{% url request-list %}">Last 10 requests</a><p>
+    {% endif %}
+  </div>
 {% endblock %}
