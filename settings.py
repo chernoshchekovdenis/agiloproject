@@ -89,6 +89,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'agiloproject.urls'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
+    'django_settings_context_processor',
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.media",
     "django.core.context_processors.request",
