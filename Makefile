@@ -4,4 +4,4 @@
 # Initial vars
 
 test: runserver
-    /bin/bash ./test_run.sh
+	/bin/bash ./test_run.sh
