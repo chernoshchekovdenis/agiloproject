@@ -17,6 +17,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = "/edit/"
 
 DATABASES = {
     'default': {

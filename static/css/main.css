@@ -1,3 +1,11 @@
+#content {
+    float: left;
+    width: 90%;
+}
+
+#login {
+    float: right;
+}
 
 #left {
     float: left;

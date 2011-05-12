@@ -9,9 +9,14 @@
   </head>
 
   <body class="home">
-    <div id="content">      
+    <div id="content">
           {% block content %}
           {% endblock content %}
+    </div>
+    <div id="login">
+      {% if not user.is_authenticated %}
+        <p><a href="/account/login/">login</a></p>
+      {% endif %}
     </div>
   </body>
 </html>

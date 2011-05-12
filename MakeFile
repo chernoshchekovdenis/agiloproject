@@ -1,8 +1,7 @@
 # Targets
-.PHONY: clean distclean docs ghdocs test
+.PHONY: clean distclean docs ghdocs test runserver
 
 # Initial vars
-project=agiloproject
 
-test:
-    manage.py test
+test: runserver
+    /bin/bash ./test_run.sh

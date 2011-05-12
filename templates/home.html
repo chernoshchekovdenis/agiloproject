@@ -5,7 +5,7 @@
     <p>{{ person.name }}</p>
     <p>{{ person.last_name}}</p>
     {% if person.day_of_birth %}
-      <p>{{ person.day_of_birth }}</p>
+      <p>{{ person.day_of_birth|date:'d.m.Y' }}</p>
     {% endif %}
     {% if person.bio %}
       <h4>Bio:</h4>
