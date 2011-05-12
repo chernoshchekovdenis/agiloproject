@@ -9,3 +9,7 @@
     width: 40%;
     padding: 110px;
 }
+
+#separated {
+    clear: both;
+}

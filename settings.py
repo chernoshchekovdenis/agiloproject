@@ -89,13 +89,13 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'agiloproject.urls'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django_settings_context_processor',
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.media",
     "django.core.context_processors.request",
     "django.core.context_processors.csrf",
     "django.core.context_processors.static",
     "django.contrib.messages.context_processors.messages",
+    "settings_to_context.context_processors.settings_to_context",
 )
     
 TEMPLATE_DIRS = (
@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     # Apps
     'person',
     'db_requests',
+    'settings_to_context',
 
 )
 
