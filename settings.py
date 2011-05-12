@@ -126,8 +126,3 @@ INSTALLED_APPS = (
     'settings_to_context',
 
 )
-
-try:
-    from settings_local import *
-except ImportError, e:
-    raise e
