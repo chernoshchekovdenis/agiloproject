@@ -6,9 +6,15 @@
     <meta name="description" content=""/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="{{STATIC_URL}}css/main.css" type="text/css" media="screen" charset="utf-8" />
+    {% block js %}
+
+    {% endblock js %}
   </head>
 
   <body class="home">
+    {% block page_header %}
+      <h1>42 Coffee Cups Test Assignment</h1>
+    {% endblock %}
     <div id="content">
           {% block content %}
           {% endblock content %}

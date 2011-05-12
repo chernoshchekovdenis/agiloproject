@@ -21,3 +21,12 @@
 #separated {
     clear: both;
 }
+
+#indicator {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    z-index: 1000;
+    left: 45%;
+    top: 45%;
+}
