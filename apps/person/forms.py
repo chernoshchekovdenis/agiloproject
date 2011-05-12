@@ -24,3 +24,4 @@ class PersonForm(forms.ModelForm):
 
     class Meta:
         model = Person
+        fields = ('other', 'skype', 'jabber', 'bio', 'day_of_birth', 'email', 'last_name', 'name')
