@@ -124,4 +124,5 @@ INSTALLED_APPS = (
     'person',
     'db_requests',
     'settings_to_context',
+    'model_crud_db',
 )
