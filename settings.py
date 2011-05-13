@@ -124,5 +124,4 @@ INSTALLED_APPS = (
     'person',
     'db_requests',
     'settings_to_context',
-
 )
