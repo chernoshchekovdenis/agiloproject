@@ -6,9 +6,9 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 sys.path.append(os.path.join(PROJECT_PATH, 'apps'),)
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-LOCAL_DEVELOPMENT = False
+LOCAL_DEVELOPMENT = True
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -113,12 +113,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    #'django.contrib.staticfiles',
+    # 'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
     
     # Foreign apps
     'south',
+    'positions',
     
     # Apps
     'person',

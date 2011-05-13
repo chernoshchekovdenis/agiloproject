@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "person.person", "fields": {"bio": "Some biography...", "last_name": "Chernoshchekov", "name": "Denis", "other": "Some other info", "skype": "freemon@ua.fm", "day_of_birth": "1984-10-07", "jabber": "denis.chernoshchekov@jabber.com", "email": "denis.chernoshchekov@djangostars.com"}}]

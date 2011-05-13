@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 
-  {% for request in request_list %}
+  {% for req in request_list %}
     <div>
-      <h1>{{ forloop.counter }} Request</h1>
-      <p>{{ request.request_body }}</p>
+      <h1>{{ forloop.counter }} Request 
+        <form method="POST" action="{% url request-edit id=req.id %}">{% csrf_token %}
+          <input type="text" name="position" value="{{ req.position }}" />
+          <input type="submit" value="Submit"/>
+        </form>
+      </h1>
+      <p>{{ req.request_body }}</p>
     </div>
   {% empty %}
     <p>Nothing to display</p>
